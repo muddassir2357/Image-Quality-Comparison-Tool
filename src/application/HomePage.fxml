@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="700.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.AppController">
+  <!-- TODO Add Nodes -->
+  <top>
+    <VBox fx:id="vbox" prefHeight="771.0" prefWidth="950.0">
+      <children>
+        <HBox fx:id="originalImage" prefHeight="202.0" prefWidth="650.0">
+          <children>
+            <ImageView id="originalImageFrame" fx:id="imageFrame1" fitHeight="187.00000061859953" fitWidth="249.33334350585938" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0" />
+            <Label prefHeight="33.0" prefWidth="66.0" text="Path(O):" translateX="20.0" translateY="10.0" />
+            <TextField id="originalImagePath" fx:id="path1" prefHeight="32.000099999997474" prefWidth="281.0" scaleY="1.0" translateX="25.0" translateY="10.0" />
+            <Button fx:id="uploadButton1" mnemonicParsing="false" onAction="#imageUploadHandler" prefWidth="-1.0" text="upload" translateX="-150.0" translateY="60.0" />
+            <TextArea fx:id="resultArea1" prefWidth="200.0" wrapText="true" />
+          </children>
+        </HBox>
+        <HBox fx:id="image1" prefHeight="202.0" prefWidth="650.0">
+          <children>
+            <ImageView fx:id="imageFrame2" fitHeight="187.00000061859953" fitWidth="249.33334350585938" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0" />
+            <Label prefHeight="33.0" prefWidth="66.0" text="Path" translateX="20.0" translateY="10.0" />
+            <TextField fx:id="path2" prefHeight="32.000099999997474" prefWidth="281.0" translateX="25.0" translateY="10.0" />
+            <Button fx:id="uploadButton2" mnemonicParsing="false" onAction="#imageUploadHandler" text="upload" translateX="-150.0" translateY="60.0" />
+            <TextArea fx:id="resultArea2" prefWidth="200.0" wrapText="true" />
+          </children>
+        </HBox>
+        <HBox fx:id="Image2" prefHeight="202.0" prefWidth="650.0">
+          <children>
+            <ImageView fx:id="imageFrame3" fitHeight="187.00000061859953" fitWidth="249.33334350585938" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0" />
+            <Label prefHeight="33.0" prefWidth="50.0" text="Path" translateX="20.0" translateY="10.0" />
+            <TextField fx:id="path3" prefHeight="32.000099999997474" prefWidth="281.0" translateX="25.0" translateY="10.0" />
+            <Button fx:id="uploadButton3" mnemonicParsing="false" onAction="#imageUploadHandler" text="upload" translateX="-150.0" translateY="60.0" />
+            <TextArea fx:id="resultArea3" prefHeight="202.0" prefWidth="200.0" translateX="0.0" wrapText="true" />
+          </children>
+        </HBox>
+        <HBox fx:id="Buttons" prefHeight="202.0" prefWidth="650.0">
+          <children>
+            <Label text="Error Threshold:" translateX="180.0" translateY="20.0" />
+            <TextField fx:id="errorThreshold" prefWidth="200.0" translateX="200.0" translateY="20.0" />
+            <Button fx:id="button" mnemonicParsing="false" onAction="#compareImageHandler" text="Compare" translateX="100.0" translateY="60.0" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </top>
+</BorderPane>
